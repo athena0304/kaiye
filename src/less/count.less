@@ -7,34 +7,34 @@
   h3.title-wrapper {
     text-align: left;
     img.title {
-          width: 41%;
-        margin: 10px 0 10px 10px;
-        margin-left: 10%;
+      width: 41%;
+      margin: 10px 0 10px 10px;
+      margin-left: 10%;
     }
   }
 }
 .button-wrapper {
-    position: absolute;
-    bottom: 5px;
-    width: 230px;
-    margin: 0 auto;
-    left: 50%;
-    margin-left: -115px;
-    .bottom-button {
-      width: 100%
-    }
-  }
-.slide{
-  .box-wrapper {
-    position: relative;
-    border: 1px solid #ffb400;
-    background-size: cover;
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    height: 80%;
+  position: absolute;
+  bottom: 5px;
+  width: 230px;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -115px;
+  .bottom-button {
+    width: 100%
   }
 }
+
+.box-wrapper {
+  position: relative;
+  border: 1px solid #ffb400;
+  background-size: cover;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 80%;
+}
+
 #section1{
   background: url(../img/section/section1/section1-bg.png);
 
@@ -49,7 +49,7 @@
     margin-top: 0;
   }
 }
-#section2{
+.black-bg{
   background: url(../img/section/black-bg.png);
   background-size: cover;
 }
@@ -58,7 +58,7 @@
   .box-wrapper {
     background: url(../img/section/section2/slide1/bg.png);
     background-size: cover;
-}
+  }
   .person1 {
     position: relative;
     top: -37px;
@@ -81,7 +81,7 @@
   .box-wrapper {
     background: url(../img/section/section2/slide2/bg.png);
     background-size: cover;
-}
+  }
   .person1 {
     position: absolute;
     top: 35%;
@@ -105,7 +105,7 @@
   .box-wrapper {
     background: url(../img/section/section2/slide3/bg.png);
     background-size: cover;
-}
+  }
   .person1 {
     position: absolute;
     top: 10%;
@@ -129,7 +129,7 @@
   .box-wrapper {
     background: url(../img/section/section2/slide4/bg.png);
     background-size: cover;
-}
+  }
   .person1 {
     position: absolute;
     top: 1%;
@@ -153,7 +153,7 @@
   .box-wrapper {
     background: url(../img/section/section2/slide5/bg.png);
     background-size: cover;
-}
+  }
   .person1 {
     position: absolute;
     top: 9%;
@@ -177,7 +177,7 @@
   .box-wrapper {
     background: url(../img/section/section2/slide6/bg.png);
     background-size: cover;
-}
+  }
   .person1 {
     position: absolute;
     top: 1%;
@@ -199,17 +199,78 @@
 }
 
 
+#section3 {
+  background: url(../img/section/section3/bg.png);
+  background-size: cover;
+  .gstar {
+    width: 80%;
+    margin-top: 10px;
+  }
+  .white-bg {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    top: 27%;
+    z-index: 1;
+  }
+  .text-title {
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    top: 29%;
+    z-index: 2;
+    left: 0;
+  }
+    .bonus {
+    width: 80%;
+    margin-top: 10px;
+    position: relative;
+    top: 24%;
+  }
+    .explain-text {
+    width: 70%;
+    margin-top: 10px;
+    position: relative;
+    top: 24%;
+  }
+/*  .bonus-wrapper {
+      width: 100%;
+      .bonus {
+        display: inline-block;
+        width: 49%;
+        div{
+          display: inline-block;
+        }
+        .avtar {
+          width: 39%;
+        }
+        .slogan {
+          width: 59%;
+        }
+      }
+  }*/
+}
+
+.teacher {
+  width: 100%;
+  height: 100%;
+}
+#section7 {
+  background: url(../img/section/section7/course.png);
+  background-size: cover;
+  }
+
 @keyframes  change
 {
-0%   {transform: scale(1) }
-50%  {transform: scale(1.3) }
-100% {transform: scale(1) }
+  0%   {transform: scale(1) }
+  50%  {transform: scale(1.3) }
+  100% {transform: scale(1) }
 }
 
 .fp-controlArrow.fp-prev {
-    border-width: 14.5px 17px 14.5px 0;
+  border-width: 14.5px 17px 14.5px 0;
 }
 
 .fp-controlArrow.fp-next {
-    border-width: 14.5px 0 14.5px 17px;
+  border-width: 14.5px 0 14.5px 17px;
 }
