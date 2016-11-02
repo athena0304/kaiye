@@ -4,6 +4,36 @@
 }
 .section{
   text-align:center;
+  h3.title-wrapper {
+    text-align: left;
+    img.title {
+          width: 41%;
+        margin: 10px 0 10px 10px;
+        margin-left: 10%;
+    }
+  }
+}
+.button-wrapper {
+    position: absolute;
+    bottom: 5px;
+    width: 230px;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -115px;
+    .bottom-button {
+      width: 100%
+    }
+  }
+.slide{
+  .box-wrapper {
+    position: relative;
+    border: 1px solid #ffb400;
+    background-size: cover;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 80%;
+  }
 }
 #section1{
   background: url(../img/section/section1/section1-bg.png);
@@ -19,13 +49,16 @@
     margin-top: 0;
   }
 }
+#section2{
+  background: url(../img/section/black-bg.png);
+  background-size: cover;
+}
 
 #section2 #slide1 {
-  background: url(../img/section/section2/slide1/section2-slide1-bg.png);
-  background-size: cover;
-  /*background-attachment: fixed;*/
-
-
+  .box-wrapper {
+    background: url(../img/section/section2/slide1/bg.png);
+    background-size: cover;
+}
   .person1 {
     position: relative;
     top: -37px;
@@ -36,6 +69,36 @@
     position: relative;
     left: -48px;
     top: -57px;
+  }
+  .name {
+    width: 58%;
+    position: relative;
+    left: 46px;
+    top: -345px;
+  }
+}
+#section2 #slide2 {
+  .box-wrapper {
+    background: url(../img/section/section2/slide2/bg.png);
+    background-size: cover;
+}
+  .person1 {
+    position: absolute;
+    top: 35%;
+    width: 51%;
+    left: -4%;
+  }
+  .person2 {
+    width: 64%;
+    position: absolute;
+    left: 56%;
+    top: 9%;
+  }
+  .name {
+    width: 43%;
+    position: absolute;
+    left: 54%;
+    top: 67%;
   }
 }
 
