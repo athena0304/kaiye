@@ -13,59 +13,49 @@
 <img src="static/img/logo.png" style="width:0px; height:0px; overflow:hidden; position: absolute;"  alt="">
 
 <div id="formbackground" style="position:absolute; width:100%; height:100%; z-index:-1">
-<img src="static/img/bg.png" height="100%" width="100%"/>
-</div>
-
-<div class="video-link">
-    <a href="/activity"><img src="static/img/video.png" alt=""></a>
+<img src="static/img/cheerbg.png" height="100%" width="100%"/>
 </div>
 
 <div class="info">
     <a href="javascript:;"><img src="static/img/info.png" alt=""></a>
 </div>
 
-<div class="title-wrap">
-   <img src="static/img/title1.png" class="title1">
-   <img src="static/img/title2.png" class="title2">
-</div>
-
-<div id="counter">
-    <span class="days"></span>
-    <span class="hours"></span>
-    <span class="minutes"></span>
-    <span class="seconds"></span>
-</div>
 
 <div class="ticket-wrapper">
-    <h3 class="ticket-title">G-STEPS 3周年公演入场票</h3>
     <div class="ticket_img_wrapper">
-        <img src="static/img/ticket.png" class="ticket" alt="">
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
-        <div class="ticket_modal"></div>
+        <img src="static/img/red_bg.png" class="ticket" alt="">
+        <div class="float_area">
+        <img src="static/img/700.png" class="ticket gsteps_six" alt="">
+            <ul class="wrapper_heart">
+                <li class="heart">
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                </li>
+                <li class="heart">
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                    <image class="image_heart" src="static/img/unchoose_heart.png"></image>
+                </li>
+            </ul>
+        </div>
+        <div class="remain_num">
+            <img src="static/img/gsteps_person_last.png" class="ticket gsteps_person_last" alt="">
+            <div class="exchange-wrapper">
+                <p>你还差<span class="remain_cheer_num">{{ remain_cheer_num }}</span>人加油即可兑换</p>
+            </div>
+        </div>
     </div>
-</div>
-
-
-<div class="exchange-wrapper">
-    <p>你的好友还差<span class="remain_cheer_num">{{ remain_cheer_num }}</span>人加油即可兑换</p>
 </div>
 
 <div class="button-wrapper">
@@ -119,12 +109,6 @@ $.ajax({
 </script>
 
 <script>
-
-
-    var ticket_models = $(".ticket_modal")
-    ticket_models.each(function(index, ele) {
-        $(this).css("left", index * 5 + "%")
-    })
 
     var num = 20 - parseInt($(".remain_cheer_num").text());
     ticket_models.filter(":lt("+num+")").addClass('hide');
