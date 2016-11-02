@@ -15,18 +15,30 @@ $(document).ready(function() {
 
             //first slide of the second section
             if (index == 2 && slideIndex == 1) {
-                console.log("asdasdasdasd")
                 $("#section2 #slide2 .person1").addClass("animated slideInDown").show()
                 $("#section2 #slide2 .person2").addClass("animated slideInUp").show()
                 $("#section2 #slide2 .name").addClass("animated slideInUp").show()
-
             }
-
-            //second slide of the second section (supposing #secondSlide is the
-            //anchor for the second slide
-            // if(index == 2 && slideIndex == 'secondSlide'){
-            //     alert("Second slide loaded");
-            // }
+            if (index == 2 && slideIndex == 2) {
+                $("#section2 #slide3 .person1").addClass("animated slideInDown").show()
+                $("#section2 #slide3 .person2").addClass("animated slideInUp").show()
+                $("#section2 #slide3 .name").addClass("animated slideInUp").show()
+            }
+            if (index == 2 && slideIndex == 3) {
+                $("#section2 #slide4 .person1").addClass("animated slideInDown").show()
+                $("#section2 #slide4 .person2").addClass("animated slideInUp").show()
+                $("#section2 #slide4 .name").addClass("animated slideInUp").show()
+            }
+            if (index == 2 && slideIndex == 4) {
+                $("#section2 #slide5 .person1").addClass("animated slideInDown").show()
+                $("#section2 #slide5 .person2").addClass("animated slideInUp").show()
+                $("#section2 #slide5 .name").addClass("animated slideInUp").show()
+            }
+            if (index == 2 && slideIndex == 5) {
+                $("#section2 #slide6 .person1").addClass("animated slideInDown").show()
+                $("#section2 #slide6 .person2").addClass("animated slideInUp").show()
+                $("#section2 #slide6 .name").addClass("animated slideInUp").show()
+            }
         }
     });
 
