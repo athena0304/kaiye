@@ -16,10 +16,10 @@ $(document).ready(function() {
                     $("#section3 .text-title").addClass("animated fadeIn").css("visibility", "visible");
                 }, 1000)
                 setTimeout(function() {
-                    $("#section3 .bonus").addClass("animated flipInY").css("visibility", "visible");
+                    $("#section3 .bonus").addClass("animated fadeIn").css("visibility", "visible");
                 }, 2000)
                 setTimeout(function() {
-                    $("#section3 .explain-text").addClass("animated flash").css("visibility", "visible");
+                    $("#section3 .explain-text").addClass("animated fadeIn").css("visibility", "visible");
                 }, 3000)
             }
         },
@@ -61,4 +61,14 @@ $(document).ready(function() {
         $("#section1").append('<img class="animated bounceInDown board" src="static/img/section/section1/section1-board.png" />')
 
     }, 2000)
+    $("#music").on("click", function() {
+        var audio = document.getElementById("audio");;
+        if(audio.paused) {
+            audio.play();
+            console.log("aaa")
+        } else {
+            console.log("bbb")
+            audio.pause();
+        }
+    })
 })
