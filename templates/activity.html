@@ -19,7 +19,7 @@
 <audio id="audio" autoplay src="http://oe9aa31ex.bkt.clouddn.com/MKL%20-%20My%20light%20%28Music%20by%20MKL%29.mp3" controls="controls" style="display: none;">
 </audio>
 
-<a class="music" id="music" href="javascript:;"><img src="static/img/music.png" alt=""></a>
+<a class="music rotate" id="music" href="javascript:;"><img src="static/img/music.png" alt=""></a>
 <div id="fullpage">
     <div class="section " id="section1">
         <img class="animated zoomIn texttitle" src="static/img/section/section1/section1-texttitle.png" />
@@ -109,6 +109,7 @@
     </div>
 
 </div>
+<a class="slide-down" href="javascript:;"><img class="slide-button" src="static/img/section/slide-down.png" /></a>
 <a class="button-wrapper" href="/"><img class="bottom-button" src="static/img/section/button.png" /></a>
 
 
@@ -118,7 +119,7 @@
 <script src="static/js/section.js?v=2"></script>
 <script>
 
-console.log("http://" + location.host + '/static/img/logo.png')
+// console.log("http://" + location.host + '/static/img/logo.png')
 $.ajax({
   url: "/conf_menu_share",
   type: "GET",
@@ -133,7 +134,7 @@ $.ajax({
     jsApiList: data.js_api_list// 必填，需要使用的JS接口列表，所有JS接口列表见附录2
          }
 
-        console.log(config);
+        // console.log(config);
       wx.config(config);
       wx.ready(function () {
   wx.onMenuShareAppMessage({

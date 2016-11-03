@@ -142,7 +142,7 @@
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
 
-console.log("http://" + location.host + '/static/img/logo.png')
+// console.log("http://" + location.host + '/static/img/logo.png')
 $.ajax({
   url: "/conf_menu_share",
   type: "GET",
@@ -157,7 +157,7 @@ $.ajax({
     jsApiList: data.js_api_list// 必填，需要使用的JS接口列表，所有JS接口列表见附录2
          }
 
-        console.log(config);
+        // console.log(config);
       wx.config(config);
       wx.ready(function () {
   wx.onMenuShareAppMessage({

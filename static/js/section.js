@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    var timeID = null;
+    function slideRight() {
+        clearTimeout(timeID);
+        timeID = setTimeout(function() {
+            $.fn.fullpage.moveSlideRight()
+        }, 1500)
+    }
     $('#fullpage').fullpage({
         verticalCentered: false,
         scrollOverflow: true,
@@ -6,9 +13,11 @@ $(document).ready(function() {
         loopBottom: true,
         afterLoad: function(anchorLink, index) {
             if (index == 2) {
+                var loadedSlide = $(this);
                 $("#section2 #slide1 .person1").addClass("animated slideInDown").css("visibility", "visible")
                 $("#section2 #slide1 .person2").addClass("animated slideInUp").css("visibility", "visible")
                 $("#section2 #slide1 .name").addClass("animated slideInUp").css("visibility", "visible")
+                slideRight()
             }
             if (index == 3) {
                 $("#section3 .white-bg").addClass("animated fadeIn").css("visibility", "visible");
@@ -32,26 +41,31 @@ $(document).ready(function() {
                 $("#section2 #slide2 .person1").addClass("animated slideInDown").css("visibility", "visible")
                 $("#section2 #slide2 .person2").addClass("animated slideInUp").css("visibility", "visible")
                 $("#section2 #slide2 .name").addClass("animated slideInUp").css("visibility", "visible")
+                slideRight()
             }
             if (index == 2 && slideIndex == 2) {
                 $("#section2 #slide3 .person1").addClass("animated slideInDown").css("visibility", "visible")
                 $("#section2 #slide3 .person2").addClass("animated slideInUp").css("visibility", "visible")
                 $("#section2 #slide3 .name").addClass("animated slideInUp").css("visibility", "visible")
+                slideRight()
             }
             if (index == 2 && slideIndex == 3) {
                 $("#section2 #slide4 .person1").addClass("animated slideInDown").css("visibility", "visible")
                 $("#section2 #slide4 .person2").addClass("animated slideInUp").css("visibility", "visible")
                 $("#section2 #slide4 .name").addClass("animated slideInUp").css("visibility", "visible")
+                slideRight()
             }
             if (index == 2 && slideIndex == 4) {
                 $("#section2 #slide5 .person1").addClass("animated slideInDown").css("visibility", "visible")
                 $("#section2 #slide5 .person2").addClass("animated slideInUp").css("visibility", "visible")
                 $("#section2 #slide5 .name").addClass("animated slideInUp").css("visibility", "visible")
+                slideRight()
             }
             if (index == 2 && slideIndex == 5) {
                 $("#section2 #slide6 .person1").addClass("animated slideInDown").css("visibility", "visible")
                 $("#section2 #slide6 .person2").addClass("animated slideInUp").css("visibility", "visible")
                 $("#section2 #slide6 .name").addClass("animated slideInUp").css("visibility", "visible")
+                slideRight()
             }
         }
     });
@@ -65,10 +79,13 @@ $(document).ready(function() {
         var audio = document.getElementById("audio");;
         if(audio.paused) {
             audio.play();
-            console.log("aaa")
+            $(this).addClass("rotate");
         } else {
-            console.log("bbb")
             audio.pause();
+            $(this).removeClass("rotate");
         }
+    })
+    $(".slide-down").on("click", function() {
+        $.fn.fullpage.moveSectionDown()
     })
 })

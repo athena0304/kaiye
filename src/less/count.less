@@ -205,18 +205,28 @@
     width: 8%;
     right: 2%;
     top: 2%;
-    animation: 8s linear 0s normal none infinite rotate;
--webkit-animation:8s linear 0s normal none infinite rotate;
     img {
       width: 100%;
     }
 }
-
-@-webkit-keyframes rotate{
-from{-webkit-transform:rotate(0deg)}
-to{-webkit-transform:rotate(360deg)}
+.rotate {
+  animation: 8s linear 0s normal none infinite rotate;
+  -webkit-animation:8s linear 0s normal none infinite rotate;
 }
-
+@-webkit-keyframes rotate{
+  from{-webkit-transform:rotate(0deg)}
+  to{-webkit-transform:rotate(360deg)}
+}
+.slide-down {
+  position: absolute;
+  bottom: 9%;
+  width: 28px;
+  left: 50%;
+  margin-left: -14px;
+  img{
+    width: 100%;
+  }
+}
 #section3 {
   background: url(../img/section/section3/bg.png);
   background-size: cover;
