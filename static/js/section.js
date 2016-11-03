@@ -11,15 +11,15 @@ $(document).ready(function() {
                 $("#section2 #slide1 .name").addClass("animated slideInUp").css("visibility", "visible")
             }
             if (index == 3) {
-                $("#section3 .white-bg").addClass("animated slideInDown").css("visibility", "visible");
+                $("#section3 .white-bg").addClass("animated fadeIn").css("visibility", "visible");
                 setTimeout(function() {
-                    $("#section3 .text-title").addClass("animated slideInDown").css("visibility", "visible");
+                    $("#section3 .text-title").addClass("animated fadeIn").css("visibility", "visible");
                 }, 1000)
                 setTimeout(function() {
-                    $("#section3 .bonus").addClass("animated slideInDown").css("visibility", "visible");
+                    $("#section3 .bonus").addClass("animated flipInY").css("visibility", "visible");
                 }, 2000)
                 setTimeout(function() {
-                    $("#section3 .explain-text").addClass("animated slideInDown").css("visibility", "visible");
+                    $("#section3 .explain-text").addClass("animated flash").css("visibility", "visible");
                 }, 3000)
             }
         },
