@@ -20,6 +20,49 @@ hr{border:0;height:1px}
 body {
     background: url('static/img/bg.png');
 }
+.close_wrapper {
+    position: relative;
+    .close {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 20px;
+    }
+    .erweima_context {
+        position: absolute;
+        width: 50%;
+        bottom: 16%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.zan_wrapper {
+    position: relative;
+    .zan_make {
+        position: absolute;
+        width: 74%;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.repeat_wrapper {
+    position: relative;
+    .repeat_make {
+        position: absolute;
+        width: 74%;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.layermcont {
+    padding: 0;
+    line-height: 0;
+    /* text-align: center; */
+}
 .video-wrap {
     text-align: center;
     border:5px;
@@ -68,12 +111,19 @@ body {
         // border: 1px solid #fff;
         img {
             width: 100%;
+            &.iwant {
+                margin-top: 5%;
+            }
         }
     }
     .btn-cheerup{
         color: #fff;
-        background: #d32b2e;
+        // background: #d32b2e;
         margin-bottom: 10px;
+        img {
+            width: 25%;
+            margin-top: 5%;
+        }
     }
     .want-tips{
         color: #fff;
@@ -81,6 +131,9 @@ body {
         margin-top:2%;
         font-weight: bold;
     }
+}
+.btn-help.friend-success {
+    margin-top: 40%;
 }
 .footer {
     position: absolute;
